@@ -100,11 +100,12 @@ str(exhibitionList[[1]])
 
 在執行前述`str(exhibitionList[[1]])`時，會看展覽1的主要資訊。請建立一個data frame class答案物件df_oneShow：
 
-  * 它只有「六」元素，分別來自於`exhibitionList[[1]]`的title及其showInfo底下的time, location, locationName, price,及endTime，
+  * 它只有「七」元素，分別來自於`exhibitionList[[1]]`的title及其showInfo底下的time, location, locationName, price, endTime，和sourceWebName，
   
-  * 各元素請使用來源元素相同名稱命名，故`names(df_oneShow)`會有time, location, locationName, price,及endTime名稱。
+  * 各元素請使用來源元素相同名稱命名，故`names(df_oneShow)`會有title, time, location, locationName, price, endTime, 及sourceWebName名稱。
   
   * 建立data frame請設定stringsAsFactors=F。
+
 
 ```{r ans22}
 # df_oneShow
