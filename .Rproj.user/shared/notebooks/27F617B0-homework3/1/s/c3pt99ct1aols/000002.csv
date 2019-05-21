@@ -1,0 +1,20 @@
+"0","library(readr)"
+"0","finStatement <- read_csv(""http://mopsfin.twse.com.tw/opendata/t187ap06_O_ci.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_character(),
+  ¦~«× = [32mcol_double()[39m,
+  ©u§O = [32mcol_double()[39m,
+  ¤½¥q¥N¸¹ = [32mcol_double()[39m,
+  Àç·~¶O¥Î = [32mcol_double()[39m,
+  `Àç·~§Q¯q¡]·l¥¢¡^` = [32mcol_double()[39m,
+  Àç·~¥~¦¬¤J¤Î¤ä¥X = [32mcol_double()[39m,
+  `µ|«e²b§Q¡]²b·l¡^` = [32mcol_double()[39m,
+  `Ä~ÄòÀç·~³æ¦ì¥»´Á²b§Q¡]²b·l¡^` = [32mcol_double()[39m,
+  `¥»´Á²b§Q¡]²b·l¡^` = [32mcol_double()[39m,
+  ¥»´Áºî¦X·l¯qÁ`ÃB = [32mcol_double()[39m,
+  `°ò¥»¨CªÑ¬Õ¾l¡]¤¸¡^` = [32mcol_double()[39m
+)
+"
+"2","See spec(...) for full column specifications.
+"
