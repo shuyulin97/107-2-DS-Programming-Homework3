@@ -2,18 +2,18 @@
     "collab_server" : "",
     "contents" : "",
     "created" : 1558451535084.000,
-    "dirty" : false,
+    "dirty" : true,
     "encoding" : "UTF-8",
     "folds" : "",
     "hash" : "46936298",
     "id" : "B6765EC5",
     "lastKnownWriteTime" : 1558492738,
-    "last_content_update" : 1558492738519,
+    "last_content_update" : 1558492795576,
     "path" : "C:/Users/user/Desktop/R/homework3/107-2-DS-Programming-Homework3/homework3.Rmd",
     "project_path" : "homework3.Rmd",
     "properties" : {
         "cursorPosition" : "195,70",
-        "scrollLine" : "176"
+        "scrollLine" : "171"
     },
     "relative_order" : 1,
     "source_on_save" : false,
