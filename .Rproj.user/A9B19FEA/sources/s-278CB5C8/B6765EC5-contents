@@ -3,8 +3,8 @@ title: "homework3"
 date: "2019-04-19"
 output: html_document
 params:
-  studentID: "你的學號"
-  studentName: "你的姓名"
+  studentID: "410575010"
+  studentName: "林書玉"
 ---
 # 注意事項
 
@@ -88,7 +88,7 @@ only1LossCompanies
 本題物件為data frame class，使用`[.R,.C]`選出符合上題條件的子樣本，存成data frame class的答案物件subsample。
 ```{r ans14}
 # subsample
-subsample <- finStatement[condition1 | condition2, c("公司名稱","營業利益（損失）", "基本每股盈餘（元）")]
+subsample <- finStatement[condition1 | condition2,]
 as.data.frame(subsample)
 class(subsample)
 subsample
@@ -111,6 +111,8 @@ str(exhibitionList[[1]])
 請使用`length()`檢查exhibitionList裡的活動數目，並把數值存在答案物件numExhibitions。
 ```{r ans21}
 # numExhibitions
+numExhibitions <- length(exhibitionList)
+numExhibitions
 ```
 
 ### 2.2 創建活動data frame
@@ -126,6 +128,18 @@ str(exhibitionList[[1]])
 
 ```{r ans22}
 # df_oneShow
+df_oneShow <- data.frame(
+  title = exhibitionList[[1]][["title"]],
+  time = exhibitionList[[1]][["showInfo"]][[1]][["time"]],
+  location = exhibitionList[[1]][["showInfo"]][[1]][["location"]],
+  locationName = exhibitionList[[1]][["showInfo"]][[1]][["locationName"]],
+  price = exhibitionList[[1]][["showInfo"]][[1]][["endTime"]],
+  sourceWebName = exhibitionList[[1]][["sourceWebName"]],
+  stringsAsFactors=F
+) 
+as.data.frame(df_oneShow)
+class(df_oneShow)
+df_oneShow
 ```
 
 ### 2.3 活動創立函數
@@ -142,6 +156,8 @@ return(df_oneShow)
 
 ```{r ans23}
 #  dataframe_show_info
+dataframe_show_info
+dataframe_show_info
 ```
 
 ### 2.4 活動資訊來源種類

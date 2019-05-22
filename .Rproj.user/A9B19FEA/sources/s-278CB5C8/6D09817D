@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1558490907395.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "6D09817D",
+    "lastKnownWriteTime" : 25896050050728048,
+    "last_content_update" : 1558490907395,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "id" : "3400b713f4504120917fb48875caf859",
+        "name" : "exhibitionList",
+        "title" : "exhibitionList"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "object_explorer"
+}
