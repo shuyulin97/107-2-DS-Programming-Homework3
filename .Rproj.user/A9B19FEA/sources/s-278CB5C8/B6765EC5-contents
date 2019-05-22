@@ -50,15 +50,19 @@ finStatement <- read_csv("http://mopsfin.twse.com.tw/opendata/t187ap06_O_ci.csv"
 ```{r ans11}
 # loss1Companies
 loss <- finStatement[[16]] < 0
-oss1Companies <- finStatement[[5]][loss]
-class(oss1Companies)
-oss1Companies
+loss1Companies <- finStatement[[5]][loss]
+class(loss1Companies)
+loss1Companies
 ```
 
 ### 1.2 每股盈餘
 請找出每股盈餘為負值的公司名稱，存成character class的答案物件loss2Companies。
 ```{r ans12}
 # loss2Companies
+loss2 <- finStatement[[33]] < 0
+loss2Companies <- finStatement[[5]][loss2]
+class(loss2Companies)
+loss2Companies
 ```
 
 ### 1.3 單一條件成立
@@ -73,12 +77,21 @@ oss1Companies
 
 ```{r ans13}
 # only1LossCompanies
+condition1 <- finStatement[[16]] > 0 & finStatement[[33]] < 0
+condition2 <- finStatement[[16]] < 0 & finStatement[[33]] > 0
+only1LossCompanies <- finStatement[[5]][condition1 | condition2]
+class(only1LossCompanies)
+only1LossCompanies
 ```
 
 ### 1.4 子樣本
 本題物件為data frame class，使用`[.R,.C]`選出符合上題條件的子樣本，存成data frame class的答案物件subsample。
 ```{r ans14}
 # subsample
+subsample <- finStatement[condition1 | condition2, c("公司名稱","營業利益（損失）", "基本每股盈餘（元）")]
+as.data.frame(subsample)
+class(subsample)
+subsample
 ```
 
 ## 2 展覽資訊

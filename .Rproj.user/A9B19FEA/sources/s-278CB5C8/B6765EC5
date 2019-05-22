@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "559257373",
+    "hash" : "3798967445",
     "id" : "B6765EC5",
-    "lastKnownWriteTime" : 1558452904,
-    "last_content_update" : 1558452904692,
+    "lastKnownWriteTime" : 1558490761,
+    "last_content_update" : 1558490761959,
     "path" : "C:/Users/user/Desktop/R/homework3/107-2-DS-Programming-Homework3/homework3.Rmd",
     "project_path" : "homework3.Rmd",
     "properties" : {
-        "cursorPosition" : "54,13",
-        "scrollLine" : "46"
+        "cursorPosition" : "92,16",
+        "scrollLine" : "85"
     },
     "relative_order" : 1,
     "source_on_save" : false,
