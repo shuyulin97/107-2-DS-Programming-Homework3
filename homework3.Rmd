@@ -156,7 +156,18 @@ return(df_oneShow)
 
 ```{r ans23}
 #  dataframe_show_info
-dataframe_show_info
+dataframe_show_info <- function(exhibitionInput){
+  show_info <- data.frame(
+  title = exhibitionInput[["title"]],
+  time = exhibitionInput[["showInfo"]][[1]][["time"]],
+  location = exhibitionInput[["showInfo"]][[1]][["location"]],
+  locationName = exhibitionInput[["showInfo"]][[1]][["locationName"]],
+  price = exhibitionInput[["showInfo"]][[1]][["endTime"]],
+  sourceWebName = exhibitionInput[["sourceWebName"]],
+  stringsAsFactors=F)
+  return(show_info)
+}
+dataframe_show_info(exhibitionList[[2]])
 dataframe_show_info
 ```
 
@@ -172,6 +183,9 @@ map_dfr(exhibitionList,dataframe_show_info) -> df_allShows
 
 ```{r ans24}
 # levels(df_allShows$sourceWebName)
+df_allShows$sourceWebName <- as.factor(df_allShows$sourceWebName)
+class(df_allShows$sourceWebName)
+levels(df_allShows$sourceWebName)
 ```
 
 ### 2.5 計算單一來源
@@ -179,6 +193,9 @@ map_dfr(exhibitionList,dataframe_show_info) -> df_allShows
 
 ```{r ans25}
 # totalCount
+totalCount <- sum(as.numeric(df_allShows$sourceWebName=="全國藝文活動資訊系統"))
+class(totalCount)
+totalCount
 ```
 
 
